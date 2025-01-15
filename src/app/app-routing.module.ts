@@ -1,12 +1,12 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-import {HomeComponent} from './home/home.component';
-import {AboutComponent} from './about/about.component';
-import {CourseComponent} from './course/course.component';
-import {courseResolver} from './services/course.resolver';
-import {LoginComponent} from './login/login.component';
-import {CreateCourseComponent} from './create-course/create-course.component';
-import {LoginReactiveComponent} from './login-reactive/login-reactive.component';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { AboutComponent } from './about/about.component';
+import { CourseComponent } from './course/course.component';
+import { CreateCourseComponent } from './create-course/create-course.component';
+import { HomeComponent } from './home/home.component';
+import { courseResolver } from './services/course.resolver';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -31,7 +31,8 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginReactiveComponent
+    component: LoginComponent
+    // component: LoginReactiveComponent
   },
   {
     path: '**',
