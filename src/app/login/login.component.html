@@ -49,6 +49,11 @@
 
         </ng-container>
 
+      <button mat-raised-button color="primary"
+              (click)="loginForm.reset()">
+        Reset
+      </button>
+
       <button mat-raised-button color="primary" type="submit"
               [disabled]="!loginForm.valid">
         Login

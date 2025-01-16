@@ -26,4 +26,7 @@ export class LoginComponent implements OnInit {
     console.log('val', this.val);
   }
 
+  resetLoginForm(loginForm: NgForm) {
+    loginForm.reset();
+  }
 }
