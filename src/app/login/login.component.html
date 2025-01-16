@@ -61,10 +61,16 @@
 
     </form>
 
-     <div class="form-val">
-         {{ loginForm.value | json }}
-         {{ password.errors | json }}
-     </div>
+     <mat-list>
+       <mat-list-item>
+         <span matListItemTitle>loginForm.values:</span>
+         <span matListItemLine>{{ loginForm.value | json }}</span>
+       </mat-list-item>
+       <mat-list-item [lines]="3">
+         <span matListItemTitle>Password errors:</span>
+         <span>{{ password.errors | json }}</span>
+       </mat-list-item>
+     </mat-list>
 
   </mat-card-content>
 </mat-card>
